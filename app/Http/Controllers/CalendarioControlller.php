@@ -21,6 +21,6 @@ class CalendarioControlller extends Controller
       $title = 'Anitoon - Calendário de lançamentos de animes';
       return view('site.calendario', 
       compact('segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado', 'domingo'
-      , 'titlepg', 'titlee'));
+      , 'titlepg', 'title'));
     }
 }
