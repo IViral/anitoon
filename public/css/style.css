@@ -1,0 +1,490 @@
+.centro {
+    max-width: 1170px;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+@media (min-width: 992px) {
+    .menu-rp {
+        height: 45px;
+    }
+    .btn-outline-success {
+        height: 35px;
+    }
+    .form-control {
+        height: 35px;
+    }
+}
+
+
+.banner-top {
+    background: #3e3c65;
+    max-width: 734px;
+    max-height: 96px;
+    top: 15px;
+    position: relative;
+    padding: 3px 0px 3px 3px;
+}
+
+.centralizar {
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.zera-margin {
+    padding: 0 !important;
+}
+
+.conteudo {
+    margin-top: 30px;
+    position: relative;
+}
+
+.postagem {
+    position: relative;
+}
+
+.barra-postagem {
+    width: 100%;
+    height: 39px;
+    background: #484976;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.barra-postagem p {
+    margin-left: 30px;
+    margin-top: -22px;
+    position: relative;
+}
+
+.barra-postagem i {
+    margin-top: 13px;
+    margin-left: 12px;
+}
+
+.widget {
+    position: relative;
+    top: -5px;
+}
+
+@media screen and (max-width:767px) {
+    .widget {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.input-login:-webkit-autofill {
+    box-shadow: 0 0 0 50px #fff inset;
+}
+
+.input-login {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #484976;
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+.bt-login {
+    width: 100%;
+    height: 33px;
+    margin-top: 2px;
+    background-color: #484976;
+    color: #fff;
+    border: 1px solid #3e3c65;
+    cursor: pointer;
+}
+
+.bt-cad {
+    color: #484976;
+    background: #fff;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bt-cad i {
+    right: 5px;
+    top: -1px;
+    position: relative;
+}
+
+.input-cad {
+    margin-top: 5px;
+    position: relative;
+    border-color: #484976;
+}
+
+.parceiros {
+    background: #484976;
+    border: 1px solid #3e3c65;
+    color: #fff;
+    width: 100%;
+    height: 33px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 3px;
+}
+
+.widget a {
+    text-decoration: none;
+}
+
+.parceiros i {
+    left: -5px;
+    position: relative;
+}
+
+footer {
+    background: #484976;
+    height: 55px;
+    clear: both;
+    top: 260px;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 18px;
+    text-align: center;
+    position: relative;
+}
+@media screen and (min-width:1440px) {
+    footer {
+        top: 797px;
+    }
+}
+@media screen and (max-width:575px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:384px) {
+    footer {
+        font-size: 10px;
+        padding-top: 22px;
+    }
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.skin-fundo {
+    background: #484976;
+    width: 32.91%;
+    height: 135px;
+    margin: 4px 3px 0px 0px;
+    float: left;
+    left: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width:1104px) {
+    .skin-fundo {
+        width: 32.80%;
+    }
+}
+
+@media screen and (max-width:879px) {
+    .skin-fundo {
+        width: 32.70%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .skin-fundo {
+        width: 98.89%;
+        height: 190px;
+    }
+}
+
+.img-skin {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.titulo-skin {
+    position: relative;
+    height: 33px;
+    background: rgba(72, 73, 118, 0.8);
+    color: #fff;
+    font-size: 13px;
+    padding-left: 6px;
+}
+
+.titulo-skin a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ep-skin {
+    position: relative;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 6px;
+    top: -17px;
+}
+
+.campo-downloads-skin {
+    background: #484976;
+    height: 33px;
+    position: relative;
+    top: 53px;
+}
+
+@media screen and (max-width:575px) {
+    .campo-downloads-skin {
+        top: 108px;
+    }
+}
+
+.btn-primaryy {
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+@media screen and (max-width:928px) {
+    .btn-primaryy {
+        font-size: 12px;
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width:821px) {
+    .btn-primaryy {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .btn-primaryy {
+        font-size: 13px;
+    }
+}
+
+.btn-primaryy a {
+    color: #fff;
+}
+
+.barra-dw-skin {
+    background-color: #484976;
+}
+
+.barra-dw-skin a {
+    color: #fff;
+}
+
+.download-skin-campo {
+    background-color: #484976;
+    border: 1px solid #3e3c65;
+    color: #fff;
+    width: 100%;
+    height: 33px;
+    font-size: 14px;
+    margin-top: 2px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.download-skin-campo a {
+    color: #fff;
+}
+
+a:not([href]):not([tabindex]) {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ---- Pagina de animes ----*/
+
+.fundo-pagina-anime {
+    background: #484976;
+    margin-top: 5px;
+    padding: 5px 0px 5px 5px;
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+
+.fundo-pagina-anime-pagina {
+    background: #484976;
+    margin-top: 5px;
+    padding: 5px 0px 5px 5px;
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+
+.fundo-pagina-anime p {
+    margin-top: 30px;
+    position: relative;
+}
+
+.pagina-ep {
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+.pagina-ep span {
+    font-weight: 600;
+}
+
+.junta-pagina-ep,
+.pagina-ep {
+    margin-top: -2px;
+    position: relative;
+}
+
+.pagina-sip {
+    font-size: 14px;
+    float: left;
+    margin-left: 5px;
+    position: relative;
+    margin-top: 15px;
+    max-width: 75%;
+    padding-right: 5px;
+    display: block;
+}
+
+@media screen and (max-width:472px) {
+    .campo-inf {
+        margin-top: 230px;
+        margin-left: -5px;
+    }
+}
+
+@media screen and (max-width:1008px) {
+    .pagina-sip {
+        margin-left: 160px;
+        margin-top: -118px;
+    }
+}
+
+@media screen and (max-width:472px) {
+    .pagina-sip {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+}
+
+.pagina-sip span {
+    font-weight: 600;
+}
+
+.campo-inf {}
+
+.fundo-lista-skin {
+    margin-top:
+}
+
+.barra-postagem-pagina {
+    width: 100%;
+    height: 30px;
+    background: #484976;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    position: relative;
+    font-size: 14px;
+}
+
+.barra-postagem-pagina p {
+    margin-left: 30px;
+    margin-top: -22px;
+    position: relative;
+}
+
+.barra-postagem-pagina a {
+    color: #fff;
+}
+
+.barra-postagem-pagina i {
+    margin-top: 6px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.paginacao{
+    top: 2px;
+    position: relative;
+    display: inline-block;
+    padding: 4px 9px 4px 9px;
+    background: #484976;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.paginacao:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.campo-lista-skins {
+    margin-top: 6px;
+}
+
+.paginacao-linha-2 {
+    margin-top: 7px;
+    position: relative;
+}
+
+.campo-paginacao {
+    top: 7px;
+    position: relative;
+}
+
+.mb-0 {
+    font-size: 14px;
+}
+
+.sep-form {
+    margin-top: 5px;
+    border-color: #484976;
+}
+
+@media screen and (max-width:751px) {
+    .img-banner {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .postagem {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .aj-lista-skin {
+        margin-left: -5px;
+        margin-top: 150px;
+        position: relative;
+    }
+}
