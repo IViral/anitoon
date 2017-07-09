@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{$title or 'Home'}}</title>
+   
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
+    <link href="http://vjs.zencdn.net/6.2.0/video-js.css" rel="stylesheet">
     <link href="{{url('css/font-awesome.css')}}" rel="stylesheet">
     <link href="{{url('css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{url('css/style.css')}}" rel="stylesheet">
@@ -125,6 +128,6 @@
     <footer>
         <p>Copyright © Anitoon 2016 - 2017 - <a href="#">Termos de Uso do Site</a> - <a href="#">DMCA</a></p>
     </footer>
-
+        <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>
         <script src="{{url('js/jquery.min.js')}}"></script>
         <script src="{{url('js/bootstrap.min.js')}}"></script>

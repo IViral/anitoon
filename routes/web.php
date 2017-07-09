@@ -9,6 +9,8 @@ Route::get('/anime/{nome?}', 'PaginaControlller@index');
 Route::get('/lista-de-animes', 'ListaAnimesControlller@index');
 Route::get('/lista-de-animes/{letra}', 'ListaAnimesControlller@letra');
 Route::get('/lista-de-animes-especial', 'ListaAnimesControlller@especial');
+//Assistir Anime
+Route::get('/anime/{anime}/{ep}', 'AssistirControlller@index');
 //Calendario
 Route::get('/calendario', 'CalendarioControlller@index');
 //Busca

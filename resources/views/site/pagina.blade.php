@@ -29,13 +29,16 @@
 @section('skin')
 
 @forelse($episodio as $episodios)
-
+@php
+    $ur = str_replace(' ', '-', $episodios->name);
+@endphp
  <div class='skin-fundo'>
      <img class='img-skin' src='{{url('img')}}/{{$episodios->imagem}}' alt=''>
      <div class='titulo-skin'><a href='{{url('')}}/anime/{{$nome}}'>{{$episodios->name}}</a></div>
      <div class='ep-skin'>Episódio {{$episodios->ep}}</div>
      <div class='campo-downloads-skin'>  
-         <a href="#" class='btn btn-primaryy' style="color:#fff;">Assistir</a>
+         <a href="{{url('anime')}}/{{$ur}}/{{$episodios->ep}}" class='btn btn-primaryy' 
+         style="color:#fff;">Assistir</a>
      </div>
 </div>
 @empty

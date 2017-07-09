@@ -7,7 +7,8 @@
             <div class="campo-paginacao-lista">
                <a class="paginacao" href="{{url('lista-de-animes-especial')}}">#</a>
                @foreach(range('a', 'z') as $letras)
-               <a class="paginacao" href="{{url('lista-de-animes')}}/{{$letras}}">{{strtoupper($letras)}}</a>
+               <a class="paginacao" href="{{url('lista-de-animes')}}/{{$letras}}">
+               {{strtoupper($letras)}}</a>
                @endforeach
             </div>
 
@@ -21,11 +22,13 @@
                        @php
                        $ur = str_replace(' ', '-', $animes->name);
                        @endphp
-                        <div class="barra-postagem-pagina"><a href="{{url('anime')}}/{{$ur}}"><i class="fa fa-folder-open"></i>
+                        <div class="barra-postagem-pagina"><a href="{{url('anime')}}/{{$ur}}">
+                        <i class="fa fa-folder-open"></i>
                             <p>{{$animes->name}}</a></p>
                         </div>
 
-                        <img src="{{url('img')}}/{{$animes->imagem}}" alt="" style="width:100px;float:left;">
+                        <img src="{{url('img')}}/{{$animes->imagem}}" alt="" 
+                        style="width:100px;float:left;">
                         <div class="aj-lista-skin">
 
                             <div class="junta-pagina-ep">

@@ -13,7 +13,8 @@
         <div class='titulo-skin'><a href='{{url('')}}/anime/{{$ur}}'>{{$episodio->name}}</a></div>
         <div class='ep-skin'>Episódio {{$episodio->ep}}</div>
         <div class='campo-downloads-skin'>  
-            <a href="" class='btn btn-primaryy' style="color:#fff;">Assistir</a>
+            <a href="{{url('anime')}}/{{$ur}}/{{$episodio->ep}}" class='btn btn-primaryy' 
+            style="color:#fff;">Assistir</a>
         </div>
     </div>
 
