@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Mail;
 use Session;
 use Redirect;
+use App\Models\Site\Widget;
 
 class MailController extends Controller
 {
@@ -13,7 +14,8 @@ class MailController extends Controller
     {
       $title = 'Anitoon - Contato';
       $titlepg = 'Contato';
-      return view('site.contato', compact('title','titlepg'));
+      $widget = Widget::orderBy('id', 'DESC')->get();
+      return view('site.contato', compact('title','titlepg', 'widget'));
     }
 
     public function store(Request $request)

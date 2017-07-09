@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Site\Episodio;
 //Model Anime
 use App\Models\Site\Anime;
+use App\Models\Site\Widget;
 
 class PaginaControlller extends Controller
 { 
@@ -18,6 +19,7 @@ class PaginaControlller extends Controller
       $episodio = Episodio::where('name', $name)->orderBy('ep', 'ASC')->paginate(12);
       //Conexao com o banco de dados de animes
       $anime = Anime::where('name', $name)->get()->first();
+      $widget = Widget::orderBy('id', 'DESC')->get();
       //Verificar se existe anime no banco de dados
       if($anime)
         //Se existir passa titulo da barra
@@ -29,7 +31,8 @@ class PaginaControlller extends Controller
       //Verificar se existe anime no banco de dados
       if($anime)
         //Se existir carrega a pagina
-       return view('site.pagina', compact('anime', 'episodio','verificar', 'title', 'titlepg', 'nome'));
+       return view('site.pagina', compact('anime', 'episodio','verificar', 'title', 'titlepg', 'nome', 
+       'widget'));
       else
         //Se nao manda para pagina 404
         return view('error404');

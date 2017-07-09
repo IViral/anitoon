@@ -14,7 +14,7 @@ class HomeControlller extends Controller
      $widget = Widget::orderBy('id', 'DESC')->get();
      return view('site.home', compact('episodios', 'widget'));
    }
-  
+
   public function error404()
   {
     return view('error404');

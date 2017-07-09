@@ -30,17 +30,3 @@
 @endsection
 
 @endsection
-
-
-@section('widget')
-@foreach($widget as $widgets)
-    <div class="widget col-md-12 pull-right" style="margin-top:10px;">
-        <div class="barra-postagem"><i class="fa fa-users"></i>
-            <p>{{$widgets->name}}</p>
-        </div>
-        @php
-        echo $widgets->cont;
-        @endphp
-    </div>
-@endforeach
-@endsection

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 //Model Anime
 use App\Models\Site\Anime;
+use App\Models\Site\Widget;
 
 class CalendarioControlller extends Controller
 {
@@ -19,8 +20,9 @@ class CalendarioControlller extends Controller
       $domingo = Anime::Where('epnovo', 'domingo')->orderBy('id', 'DESC')->get();
       $titlepg = 'Calendário';
       $title = 'Anitoon - Calendário de lançamentos de animes';
+      $widget = Widget::orderBy('id', 'DESC')->get();
       return view('site.calendario', 
-      compact('segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado', 'domingo'
-      , 'titlepg', 'title'));
+      compact('segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado', 'domingo', 'titlepg', 'title', 
+      'widget'));
     }
 }

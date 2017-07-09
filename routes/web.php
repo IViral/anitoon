@@ -15,7 +15,6 @@ Route::get('/calendario', 'CalendarioControlller@index');
 Route::get('/buscar', 'BuscaControlller@index');
 //Contato
 Route::resource('/contato', 'MailController');
-Route::resource('/contato/show', 'MailController');
 
 Auth::routes();
 

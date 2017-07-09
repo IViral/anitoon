@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 //Model Anime
 use App\Models\Site\Anime;
-
+use App\Models\Site\Widget;
 
 class BuscaControlller extends Controller
 {
@@ -17,9 +17,10 @@ class BuscaControlller extends Controller
       $sem = 'Anime não encontrado';
       $title = 'Anitoon - Buscando '.$nome;
       $titlepg = 'Buscando '.$nome;
+      $widget = Widget::orderBy('id', 'DESC')->get();
       if(count($anime))
-        return view('site.busca', compact('title', 'titlepg', 'anime'));
+        return view('site.busca', compact('title', 'titlepg', 'anime', 'widget'));
       else
-        return view('site.busca', compact('title', 'titlepg', 'anime', 'sem'));
+        return view('site.busca', compact('title', 'titlepg', 'anime', 'sem', 'widget'));
     }
 }

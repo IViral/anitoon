@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 //Model Anime
 use App\Models\Site\Anime;
+use App\Models\Site\Widget;
 
 
 class ListaAnimesControlller extends Controller
@@ -15,10 +16,11 @@ class ListaAnimesControlller extends Controller
       $sem = 'Não existe animes que iniciam com essa letra disponível';
       $title = 'Anitoon - Lista de Animes, Filmes e OVAs';
       $titlepg = 'Lista de Animes';
+      $widget = Widget::orderBy('id', 'DESC')->get();
       if(count($anime))
-       return view('site.lista', compact('anime', 'title', 'titlepg'));
+       return view('site.lista', compact('anime', 'title', 'titlepg', 'widget'));
       else
-        return view('site.lista', compact('anime', 'title', 'sem', 'titlepg'));
+        return view('site.lista', compact('anime', 'title', 'sem', 'titlepg', 'widget'));
     }
     public function letra($letra)
     {
@@ -27,10 +29,11 @@ class ListaAnimesControlller extends Controller
       $sem = 'Não existe animes que iniciam com essa letra disponível';
       $title = 'Anitoon - Lista de Animes, Filmes e OVAs';
       $titlepg = 'Lista de Animes';
+      $widget = Widget::orderBy('id', 'DESC')->get();
       if(count($anime))
-       return view('site.lista', compact('anime', 'title', 'titlepg'));
+       return view('site.lista', compact('anime', 'title', 'titlepg', 'widget'));
       else
-        return view('site.lista', compact('anime', 'title','sem', 'titlepg'));;
+        return view('site.lista', compact('anime', 'title','sem', 'titlepg', 'widget'));;
     }
       public function especial()
     {
@@ -38,9 +41,10 @@ class ListaAnimesControlller extends Controller
       $sem = 'Não existe animes que iniciam com essa letra disponível';
       $title = 'Anitoon - Lista de Animes, Filmes e OVAs';
       $titlepg = 'Lista de Animes';
+      $widget = Widget::orderBy('id', 'DESC')->get();
       if(count($anime))
-       return view('site.lista', compact('anime', 'title', 'titlepg'));
+       return view('site.lista', compact('anime', 'title', 'titlepg', 'widget'));
       else
-        return view('site.lista', compact('anime', 'title','sem', 'titlepg'));;
+        return view('site.lista', compact('anime', 'title','sem', 'titlepg', 'widget'));;
     }
 }
