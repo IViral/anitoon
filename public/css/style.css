@@ -16,7 +16,6 @@
     }
 }
 
-
 .banner-top {
     background: #3e3c65;
     max-width: 734px;
@@ -153,11 +152,13 @@ footer {
     text-align: center;
     position: relative;
 }
+
 @media screen and (min-width:1440px) {
     footer {
         top: 797px;
     }
 }
+
 @media screen and (max-width:575px) {
     footer {
         font-size: 12px;
@@ -428,7 +429,7 @@ a:not([href]):not([tabindex]):hover {
     position: relative;
 }
 
-.paginacao{
+.paginacao {
     top: 2px;
     position: relative;
     display: inline-block;
