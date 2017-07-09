@@ -17,7 +17,9 @@ Route::get('/calendario', 'CalendarioControlller@index');
 Route::get('/buscar', 'BuscaControlller@index');
 //Contato
 Route::resource('/contato', 'MailController');
-
+//Painel
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('painel/home', 'HomeController@index')->name('home');
+Route::resource('painel/episodios', 'painel\EpisodiosController');
+Route::get('painel/animes', 'HomeController@animes');
+Route::get('painel/widgets', 'HomeController@widgets');

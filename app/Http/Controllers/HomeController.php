@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function animes()
+    {
+        return view('home');
+    }
+
+    public function widgets()
+    {
+        return view('home');
+    }
 }
