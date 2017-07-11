@@ -3,11 +3,24 @@
 namespace App\Http\Controllers\painel;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use App\Models\Site\Anime;
 use App\Models\Site\Episodio;
+use App\Http\Requests\EpisodioFormRequest;
 
 class EpisodiosController extends Controller
 {
+      /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +50,13 @@ class EpisodiosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->except(['_token']);
+        $anime = Anime::where('name', $request->input('name'))->get()->first();
+        $episodio = Episodio::where('name', $request->input('name'))->get();
+        if($anime)
+            $episodio = Episodio::insert($data);
+        else
+            return redirect()->route('episodios.create');
     }
 
     /**
