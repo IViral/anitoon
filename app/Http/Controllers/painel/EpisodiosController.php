@@ -26,10 +26,16 @@ class EpisodiosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $episodio = Episodio::orderBy('name', 'ESC')->paginate(30);
-        return view('auth.episodios', compact('episodio'));
+        $nome = $request->input('nome');
+        $buscar = '%'.$nome.'%';
+        $episodio = Episodio::Where('name', 'LIKE', $buscar)->orderBy('name', 'ESC')->paginate(25);
+        $sem = 'Episódio não achado';
+        if(count($episodio))
+            return view('auth.episodios', compact('episodio'));
+        else
+            return view('auth.episodios', compact('episodio', 'sem'));
     }
 
     /**

@@ -11,9 +11,12 @@
                     <a href='{{url('painel/episodios/create')}}'>
                         <button type="button" class="btn btn-primary bt-cadastrar">Cadastrar</button>
                     </a>
+                    <a href='{{url('painel/episodios')}}'>
+                        <button type="button" class="btn btn-primary bt-cadastrar">Voltar</button>
+                    </a>
                     <form class="navbar-form navbar-right" style="top:-7px;position:relative;">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Buscar Episódio">
+        <div class="form-group" action="" method="post">
+          <input type="text" class="form-control" name="nome" placeholder="Buscar Episódio">
         </div>
         <button type="submit" class="btn btn-default">Buscar</button>
       </form>
@@ -28,7 +31,8 @@
                             <td>{{$episodios->name}}</td>
                             <td>{{$episodios->ep}}</td>
                         <td>
-                            <a href="{{url('painel/episodios')}}/{{$episodios->id}}/edit" class="edit actions">
+                            <a href="{{url('painel/episodios')}}/{{$episodios->id}}/edit" 
+                            class="edit actions">
                             <i class="fa fa-pencil" style="background: #21aa9a;color: #fff;padding: 8px;
                             border-radius: 2px;"></i></a>
                             <a href="http://localhost/site/public/produto/48" class="delete actions">
@@ -37,7 +41,9 @@
                             </td>
                         </tr>
                         @empty
-
+                            <tr>
+                                <td>Episódio não Encontrado!!!</td>
+                            <td>
                         @endforelse
                     </table>
                 </div>
